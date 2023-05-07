@@ -7,7 +7,7 @@ graphQlServer.start().then((res) => {
  graphQlServer.applyMiddleware({ app, path: "/graphql" });
  app.listen({ port }, () =>
   console.log(
-   `🚀 Server ready at http://localhost:ocalhost:${port}${graphQlServer.graphqlPath}`
+   `🚀 Server ready at http://localhost:${port}${graphQlServer.graphqlPath}`
   )
  );
 });

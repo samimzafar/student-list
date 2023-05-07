@@ -16,5 +16,19 @@ module.exports = {
   } catch (error) {
    next(error);
   }
+ },
+
+ getAll: async (req, res, next) => {
+  try {
+   const users = await Students.findAll();
+   res.status(200).send({
+    success: true,
+    status: 200,
+    message: "User Fetched ",
+    data: users,
+   });
+  } catch (error) {
+   next(error);
+  }
  }
 };
