@@ -6,9 +6,9 @@ const typeDefs = gql`
 `;
 // Provide resolver functions for your schema fields
 const resolvers = {
- Query: {
-  hello: () => "Hello world!",
- },
+  Query: {
+    hello: () => "Hello Server!",
+  },
 };
 const graphQlServer = new ApolloServer({ typeDefs, resolvers });
 
