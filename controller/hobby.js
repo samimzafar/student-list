@@ -7,7 +7,7 @@ module.exports = {
     attributes: [
      "id",
      "title",
-     [col("studentHobby.firstName"), "studentName"],
+     [col("studentHobby.name"), "studentName"],
      [col("studentHobby.email"), "studentEmail"]
     ],
     include: [
